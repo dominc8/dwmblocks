@@ -3,9 +3,9 @@ static const Block blocks[] = {
     /*Icon*/    /*Command*/        /*Update Interval*/    /*Update Signal*/
 //    {"", "cat ~/.pacupdate | sed /📦0/d",                                 0,        9},
 
-//    {"🧠", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",    30,        0},
+      {"🧠", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",    30,        0},
 
-//    {"", "~/bin/statusbar/volume",                                        0,        10},
+      {"", "~/.config/statusbar/volume",                                    1,        0},
 
 //    {"☀", "xbacklight | sed 's/\\..*//'",                                 0,        11},
 
