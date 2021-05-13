@@ -6,7 +6,9 @@ static const Block blocks[] = {
       {"🧠", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",                                 20,         0},
 
       {"🌡", "sensors | awk '/^Core 0:/{printf \"%d\", $3} ; /^Core 1:/{printf \"/%d°C\\n\", $3};' ",    15,         0},
+      {"", "mpstat | awk '/all/ { print 100 - $13\"\%\" }'",                                           15,         0},
 //🌡
+//
       {"", "~/.config/statusbar/volume",                                                                1,          0},
 
 //    {"☀", "xbacklight | sed 's/\\..*//'",                                 0,        11},
